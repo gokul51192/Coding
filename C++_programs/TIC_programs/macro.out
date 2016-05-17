@@ -1,0 +1,28 @@
+
+ initial value of a = 4
+	BAND(++a)=0
+	 After execution a = 5
+
+ initial value of a = 5
+	BAND(++a)=8
+	 After execution a = 8
+
+ initial value of a = 6
+	BAND(++a)=9
+	 After execution a = 9
+
+ initial value of a = 7
+	BAND(++a)=10
+	 After execution a = 10
+
+ initial value of a = 8
+	BAND(++a)=0
+	 After execution a = 10
+
+ initial value of a = 9
+	BAND(++a)=0
+	 After execution a = 11
+
+ initial value of a = 10
+	BAND(++a)=0
+	 After execution a = 12
