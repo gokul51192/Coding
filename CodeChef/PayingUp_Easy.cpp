@@ -18,17 +18,7 @@ int main()
 			cin>>l_eachMoneyValue;
 			l_moneyDetails.push_back(l_eachMoneyValue);
 		}
-		int  l_tempSubSetMoney;
-		l_subsetOfMoneyFlag = false;
-		for(int i = 0;i<l_numberOfNotes_n;i++)
-		{
-			if(true == check_subset_Money(l_moneyDetails,i,l_numberOfNotes_n,l_moneyAsked_n,0))
-			{
-				l_subsetOfMoneyFlag = true;
-				break;
-			}
-		}
-		if (true == l_subsetOfMoneyFlag) {
+		if (true == check_subset_Money(l_moneyDetails,0,l_numberOfNotes_n,l_moneyAsked_n,0)) {
 			cout<<"Yes";
 			cout<<endl;
 		}
@@ -48,7 +38,7 @@ bool check_subset_Money(std::vector<int> &p_obj,int position,int &p_numberOfNote
 				return true;
 		for(int i=position;i<p_numberOfNotes_n-1;i++)
 		{
-				 return check_subset_Money(p_obj,i+1,p_numberOfNotes_n,p_moneyAsked_n,(l_prevSubSetValue+l_temp)))
+				 return check_subset_Money(p_obj,i+1,p_numberOfNotes_n,p_moneyAsked_n,(l_prevSubSetValue+l_temp)) || check_subset_Money(p_obj,i+1,p_numberOfNotes_n,p_moneyAsked_n,(l_prevSubSetValue));
 		}
 		return false;
 }
