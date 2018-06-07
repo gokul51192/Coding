@@ -1,7 +1,5 @@
 #include <iostream>
 #include <queue>
-//Chapter 15: Multiple Inheritance
-//212
 #include <list>
 #include <cstdlib>
 #include <ctime>
@@ -44,8 +42,6 @@ class Teller {
 		int servtime = current.getTime();
 		if(servtime > ttime) {
 			servtime -= ttime;
-//			Chapter 15: Multiple Inheritance
-//				213
 			current.setTime(servtime);
 			busy = true; // Still working on current
 			return;
