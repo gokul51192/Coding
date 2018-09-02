@@ -1,0 +1,4 @@
+Bitset_program.cpp: In function ‘int main()’:
+Bitset_program.cpp:39:16: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char* cbits = "111011010110111";
+                ^~~~~~~~~~~~~~~~~
